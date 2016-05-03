@@ -1,0 +1,99 @@
+html,body, .container
+{
+    height:100%
+}
+#container{
+    margin-top: 100px;
+}
+.container
+{
+    border: 1px solid rgba(255, 0, 0, 0);
+    background-color: white;
+    background:#fff;
+    -webkit-transition:-webkit-transform .2s cubic-bezier(.2, .3, .25, .9);
+    -moz-transition:-moz-transform .2s cubic-bezier(.2, .3, .25, .9);
+    -o-transition:-o-transform .2s cubic-bezier(.2, .3, .25, .9);
+    transition:transform .2s cubic-bezier(.2, .3, .25, .9)
+}
+.surface
+{
+    top:0;
+    height:100%;
+    width:100%;
+    *zoom:1;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    -webkit-transition:padding-bottom .1s;
+    -moz-transition:padding-bottom .1s;
+    -ms-transition:padding-bottom .1s;
+    -o-transition:padding-bottom .1s;
+    transition:padding-bottom .1s
+}
+.surface:before,.surface:after
+{
+    display:table;
+    content:" "
+}
+.surface:after
+{
+    clear:both
+}
+.diagnostics-visible .container
+{
+    padding-bottom:50px
+}
+.screen-content
+{
+    outline:0;
+    background-color:#fff
+}
+.surface-scroll-overlay
+{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:900;
+    overflow:auto
+}
+.surfaces-transitioning
+{
+    overflow:hidden
+}
+.surfaces-transitioning .surface-scroll-overlay
+{
+    display:block
+}
+.surfaces-transitioning .surface-container
+{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0
+}
+.surfaces-transitioning .surface
+{
+    position:absolute;
+    top:0;
+    overflow:auto
+}
+.surfaces-transitioning .surface-transitioning-in
+{
+    z-index:200
+}
+.surfaces-transitioning .surface-transitioning-out
+{
+    z-index:100
+}
+.surfaces-transitioning .surface-container.surface-container-fixed
+{
+    position:fixed;
+    top:0
+}
+.disable-pointer-events
+{
+    pointer-events:none !important
+}

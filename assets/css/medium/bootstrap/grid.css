@@ -1,0 +1,108 @@
+.layout-single-column
+{
+    width:640px;
+    margin:0 auto
+}
+.post-article .layout-single-column,.logged-out-post-footer .layout-single-column
+{
+    width:700px
+}
+.layout-multi-column
+{
+    width:75%;
+    max-width:1200px;
+    margin:0 auto
+}
+.layout-multi-column .layout-single-column
+{
+    width:auto
+}
+.layout-multi-column-half,.layout-multi-column-primary,.layout-multi-column-secondary
+{
+    display:inline-block;
+    vertical-align:top
+}
+.layout-multi-column-primary
+{
+    width:62%
+}
+.layout-multi-column-secondary
+{
+    width:35%;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    padding-right:40px
+}
+.layout-multi-column-header
+{
+    margin:75px 0 40px
+}
+.layout-multi-column-half
+{
+    width:50%
+}
+.layout-foreground
+{
+    position:relative;
+    z-index:100
+}
+.layout-fill,.layout-fill-width
+{
+    width:100%
+}
+.layout-fill,.layout-fill-height
+{
+    height:100%
+}
+.layout-table-row
+{
+    display:table-row
+}
+@media all and (max-width:800px)
+{
+    .post-article .layout-single-column,.logged-out-post-footer .layout-single-column
+    {
+        width:640px
+    }
+    .layout-multi-column-primary,.layout-multi-column-secondary,.layout-multi-column-half
+    {
+        width:100%
+    }
+    .layout-multi-column-secondary
+    {
+        padding-right:0
+    }
+    .layout-multi-column-secondary+.layout-multi-column-primary
+    {
+        margin-top:60px
+    }
+    .layout-multi-column .layout-single-column
+    {
+        margin:0
+    }
+
+}
+@media all and (max-width:680px)
+{
+    .layout-single-column,.layout-multi-column,.post-article .layout-single-column,.logged-out-post-footer .layout-single-column
+    {
+        width:auto;
+        margin-left:20px;
+        margin-right:20px
+    }
+    .post-article .layout-single-column
+    {
+        margin-right:25px
+    }
+
+}
+@media all and (max-width:500px)
+{
+    .layout-single-column,.layout-multi-column
+    {
+        margin-left:16px;
+        margin-right:16px
+    }
+
+}

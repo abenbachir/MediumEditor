@@ -1,0 +1,354 @@
+
+.btn.inline-tooltip2-control>.fa:before,
+.btn.inline-tooltip2-btn>.fa:before
+{
+    font-size: 15px;
+}
+
+.btn.inline-tooltip2-btn>.fa.fa-plus-circle:before
+{
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.inline-tooltip2
+{
+    position: absolute;
+    margin-left: -23px;
+    padding: 0;
+    height: 40px;
+    z-index: 900;
+    filter: alpha(opacity=0);
+    -khtml-opacity: 0;
+    -moz-opacity: 0;
+    opacity: 0;
+    -webkit-transition: opacity .2s;
+    -moz-transition: opacity .2s;
+    -ms-transition: opacity .2s;
+    -o-transition: opacity .2s;
+    transition: opacity .2s;
+}
+.inline-tooltip2.is-active
+{
+    filter: alpha(opacity=100);
+    -khtml-opacity: 1;
+    -moz-opacity: 1;
+    opacity: 1;
+}
+.btn.inline-tooltip2-btn
+{
+    width: 30px;
+    height: 30px;
+    line-height: 29px;
+    margin-top: 5px;
+    padding: 0;
+    text-align: center;
+    background-color: #414141;
+}
+.inline-tooltip2-btn-control
+{
+    border: none;
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+    -webkit-transition: -webkit-transform .1s;
+    -moz-transition: -moz-transform .1s;
+    -o-transition: -o-transform .1s;
+    transition: transform .1s;
+}
+
+.inline-tooltip2-btn>.fa:before
+{
+    color: white;
+}
+.inline-tooltip2-btn:hover,
+.inline-tooltip2-btn:focus
+{
+    background-color: #000;
+}
+
+.enable-night-mode .inline-tooltip2 .inline-tooltip2-btn>.fa:before
+{
+    color: #000;
+}
+.enable-night-mode .btn.inline-tooltip2-btn
+{
+    background-color: #d1d1d1;
+}
+.enable-night-mode .inline-tooltip2 .inline-tooltip2-btn:hover,
+.enable-night-mode .inline-tooltip2 .inline-tooltip2-btn:focus
+{
+    background-color: #fff;
+}
+.enable-night-mode .inline-tooltip2 .inline-tooltip2-btn:hover>.fa:before,
+.enable-night-mode .inline-tooltip2 .inline-tooltip2-btn:focus>.fa:before
+{
+    color: #000;
+}
+
+
+/* /////////// Tooltip Menu  /////////// */
+.inline-tooltip2-menu
+{
+    display: none;
+    padding-left: 22px;
+}
+
+.inline-tooltip2.is-menu-active>.inline-tooltip2-menu
+{
+    display: inline-block;
+}
+.inline-tooltip2.is-menu-active>.inline-tooltip2-btn-control
+{
+    -webkit-transition: -webkit-transform .25s;
+    -moz-transition: -moz-transform .25s;
+    -o-transition: -o-transform .25s;
+    transition: transform .25s;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/*///////////   Btn Menu /////////////////*/
+.inline-tooltip2-btn-menu
+{
+    -webkit-transform: scale(0) rotate(0deg);
+    -moz-transform: scale(0) rotate(0deg);
+    -ms-transform: scale(0) rotate(0deg);
+    -o-transform: scale(0) rotate(0deg);
+    transform: scale(0);
+    margin-right: 9px;
+}
+.inline-tooltip2.is-open .inline-tooltip2-btn-menu
+{
+    -webkit-transition: -webkit-transform .2s;
+    -moz-transition: -moz-transform .2s;
+    -o-transition: -o-transform .2s;
+    transition: transform .2s;
+    -webkit-transform: scale(1) rotate(360deg);
+    -moz-transform: scale(1) rotate(360deg);
+    -ms-transform: scale(1) rotate(360deg);
+    -o-transform: scale(1) rotate(360deg);
+    transform: scale(1) rotate(360deg);
+}
+.inline-tooltip2.is-closing .inline-tooltip2-btn-menu
+{
+    -webkit-transition: -webkit-transform .1s;
+    -moz-transition: -moz-transform .1s;
+    -o-transition: -o-transform .1s;
+    transition: transform .1s;
+    -webkit-transform: scale(0) rotate(0deg);
+    -moz-transform: scale(0) rotate(0deg);
+    -ms-transform: scale(0) rotate(0deg);
+    -o-transform: scale(0) rotate(0deg);
+    transform: scale(0) rotate(0deg);
+}
+.inline-tooltip2.is-opening .inline-tooltip2-btn-insert-Video
+{
+    -webkit-transition-delay: 30ms;
+    -moz-transition-delay: 30ms;
+    -o-transition-delay: 30ms;
+    transition-delay: 30ms;
+}
+.inline-tooltip2.is-opening .inline-tooltip2-btn-insert-embed
+{
+    -webkit-transition-delay: 60ms;
+    -moz-transition-delay: 60ms;
+    -o-transition-delay: 60ms;
+    transition-delay: 60ms;
+}
+.inline-tooltip2.is-opening .inline-tooltip2-btn-insert-hr
+{
+    -webkit-transition-delay: 90ms;
+    -moz-transition-delay: 90ms;
+    -o-transition-delay: 90ms;
+    transition-delay: 90ms;
+}
+.inline-tooltip2-btn-menu>.fa:before
+{
+    -webkit-transition: -webkit-transform .2s;
+    -moz-transition: -moz-transform .2s;
+    -o-transition: -o-transform .2s;
+    transition: transform .2s;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+}
+.inline-tooltip2.is-open .inline-tooltip2-btn-menu>.fa:before
+{
+    -webkit-transition: -webkit-transform .2s;
+    -moz-transition: -moz-transform .2s;
+    -o-transition: -o-transform .2s;
+    transition: transform .2s;
+    -webkit-transition-delay: 100ms;
+    -moz-transition-delay: 100ms;
+    -o-transition-delay: 100ms;
+    transition-delay: 100ms;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+
+
+/*///////////  Clock button Menu /////////////////*/
+.inline-tooltip2-clock-menu
+{
+    display: none;
+    position: absolute;
+    top:0;
+}
+.inline-tooltip2.is-menu-active>.inline-tooltip2-clock-menu
+{
+    display: inline-block;
+}
+.inline-tooltip2-btn-clock-menu
+{
+    -webkit-transform: scale(0) rotate(0deg);
+    -moz-transform: scale(0) rotate(0deg);
+    -ms-transform: scale(0) rotate(0deg);
+    -o-transform: scale(0) rotate(0deg);
+    transform: scale(0);
+}
+.inline-tooltip2.is-open .inline-tooltip2-btn-clock-menu
+{
+    -webkit-transition: -webkit-transform .2s;
+    -moz-transition: -moz-transform .2s;
+    -o-transition: -o-transform .2s;
+    transition: transform .2s;
+    -webkit-transform: scale(1) rotate(360deg);
+    -moz-transform: scale(1) rotate(360deg);
+    -ms-transform: scale(1) rotate(360deg);
+    -o-transform: scale(1) rotate(360deg);
+    transform: scale(1) rotate(360deg);
+}
+.inline-tooltip2.is-closing .inline-tooltip2-btn-clock-menu
+{
+    -webkit-transition: -webkit-transform .1s;
+    -moz-transition: -moz-transform .1s;
+    -o-transition: -o-transform .1s;
+    transition: transform .1s;
+    -webkit-transform: scale(0) rotate(0deg);
+    -moz-transform: scale(0) rotate(0deg);
+    -ms-transform: scale(0) rotate(0deg);
+    -o-transform: scale(0) rotate(0deg);
+    transform: scale(0) rotate(0deg);
+}
+
+.inline-tooltip2-btn-clock-menu>.fa:before
+{
+    -webkit-transition: -webkit-transform .2s;
+    -moz-transition: -moz-transform .2s;
+    -o-transition: -o-transform .2s;
+    transition: transform .2s;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+}
+.inline-tooltip2.is-open .inline-tooltip2-btn-clock-menu>.fa:before
+{
+    -webkit-transition: -webkit-transform .2s;
+    -moz-transition: -moz-transform .2s;
+    -o-transition: -o-transform .2s;
+    transition: transform .2s;
+    -webkit-transition-delay: 100ms;
+    -moz-transition-delay: 100ms;
+    -o-transition-delay: 100ms;
+    transition-delay: 100ms;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+.btn-clock-1
+{
+    position: absolute;
+    top: -45;
+}
+.btn-clock-2
+{
+    position: absolute;
+    top: 0;
+    left: 45;
+}
+.btn-clock-3
+{
+    position: absolute;
+    top: 45;
+}
+
+
+
+/*************************  Inline media tooltip  ********************/
+.inline-media-tooltip
+{
+    position: absolute;
+    margin-left: -23px;
+    padding: 0;
+    height: 40px;
+    z-index: 900;
+    filter: alpha(opacity=0);
+    -khtml-opacity: 0;
+    -moz-opacity: 0;
+    opacity: 0;
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -ms-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s;
+}
+.inline-media-tooltip.is-active
+{
+    filter: alpha(opacity=100);
+    -khtml-opacity: 1;
+    -moz-opacity: 1;
+    opacity: 1;
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -ms-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s;
+}
+.btn.inline-media-tooltip-btn
+{
+    width: 30px;
+    height: 30px;
+    line-height: 29px;
+    margin-top: 5px;
+    padding: 0;
+    text-align: center;
+    background-color: #414141;
+    display: block;
+}
+.btn.inline-media-tooltip-btn:hover
+{
+    background-color: black;
+}
+.btn.inline-media-tooltip-btn >.fa:before
+{
+    color:white;
+}
+
+.enable-night-mode .btn.inline-media-tooltip-btn
+{
+    background-color: #d1d1d1;
+}
+.enable-night-mode .btn.inline-media-tooltip-btn:hover
+{
+    background-color: white;
+}
+
+.enable-night-mode .btn.inline-media-tooltip-btn >.fa:before
+{
+    color:black;
+}

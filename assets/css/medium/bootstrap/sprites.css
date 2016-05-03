@@ -1,0 +1,582 @@
+/*
+// Sprites
+// --------------------------------------------------
+
+// ICONS
+// -----
+
+// All icons receive the styles of the <i> tag with a base class
+// of .i and are then given a unique class to add width, height,
+// and background-position. Your resulting HTML will look like
+// <i class="icon-inbox"></i>.
+
+// For the white version of the icons, just add the .icon-white class:
+// <i class="icons icons-add"></i>
+ */
+@font-face
+{
+    font-family:'medium-icons';
+    src:url("/assets/fonts/medium/medium-icons.qOrLuor_bQMiWt231xBYCQ.eot");
+    src:url("/assets/fonts/medium/medium-icons.qOrLuor_bQMiWt231xBYCQ.eot?#iefix") format("embedded-opentype"),url("/assets/fonts/medium/medium-icons.rftwmweHuv8coVasnlvsOA.woff") format("woff"),url("/assets/fonts/medium/medium-icons.yScjvSJB__nPn49KuKShRQ.ttf") format("truetype"),url("/assets/fonts/medium/medium-icons.5lITf0Zw_c1LYuoNys4mvQ.svg?#medium-icons") format("svg");
+    font-weight:normal;
+    font-style:normal
+}
+.icons
+{
+    font-family:'medium-icons';
+    font-weight:normal;
+    font-style:normal;
+    speak:none;
+    text-decoration:none;
+    text-transform:none;
+    text-rendering:optimizeLegibility;
+    -webkit-font-smoothing:antialiased
+}
+.browser-android .icons
+{
+    text-rendering:auto !important
+}
+.icons-UNUSED-diamond:before
+{
+    content:"\e001"
+}
+.icons-UNUSED-full-diamond:before
+{
+    content:"\e002"
+}
+.icons-UNUSED-solid-add:before
+{
+    content:"\e003"
+}
+.icons-UNUSED-triangle:before
+{
+    content:"\e004"
+}
+.icons-activity:before
+{
+    content:"\e005"
+}
+.icons-add-circled:before
+{
+    content:"\e006"
+}
+.icons-add-further-reading:before
+{
+    content:"\e007"
+}
+.icons-add-to-collection:before
+{
+    content:"\e008"
+}
+.icons-add:before
+{
+    content:"\e009"
+}
+.icons-arrow-left:before
+{
+    content:"\e00a"
+}
+.icons-arrow-right:before
+{
+    content:"\e00b"
+}
+.icons-avatar:before
+{
+    content:"\e00c"
+}
+.icons-blockquote:before
+{
+    content:"\e00d"
+}
+.icons-bold:before
+{
+    content:"\e00e"
+}
+.icons-camera:before
+{
+    content:"\e00f"
+}
+.icons-check:before
+{
+    content:"\e010"
+}
+.icons-circle-check:before
+{
+    content:"\e011"
+}
+.icons-collections:before
+{
+    content:"\e012"
+}
+.icons-draft:before
+{
+    content:"\e013"
+}
+.icons-drop-cap:before
+{
+    content:"\e014"
+}
+.icons-email:before
+{
+    content:"\e015"
+}
+.icons-embed:before
+{
+    content:"\e016"
+}
+.icons-enlarge:before
+{
+    content:"\e017"
+}
+.icons-error-400:before
+{
+    content:"\e018"
+}
+.icons-error-401:before
+{
+    content:"\e019"
+}
+.icons-error-403:before
+{
+    content:"\e01a"
+}
+.icons-error-404:before
+{
+    content:"\e01b"
+}
+.icons-error-410:before
+{
+    content:"\e01c"
+}
+.icons-error-500:before
+{
+    content:"\e01d"
+}
+.icons-error-unknown:before
+{
+    content:"\e01e"
+}
+.icons-facebook:before
+{
+    content:"\e01f"
+}
+.icons-flag:before
+{
+    content:"\e020"
+}
+.icons-group:before
+{
+    content:"\e021"
+}
+.icons-h1:before
+{
+    content:"\e022"
+}
+.icons-h2:before
+{
+    content:"\e023"
+}
+.icons-h3:before
+{
+    content:"\e024"
+}
+.icons-heart-outline:before
+{
+    content:"\e025"
+}
+.icons-heart:before
+{
+    content:"\e026"
+}
+.icons-image-fill-width:before
+{
+    content:"\e027"
+}
+.icons-image-full-bleed:before
+{
+    content:"\e028"
+}
+.icons-image-inset-center:before
+{
+    content:"\e029"
+}
+.icons-image-inset-left:before
+{
+    content:"\e02a"
+}
+.icons-image-outset-center:before
+{
+    content:"\e02b"
+}
+.icons-image-outset-left:before
+{
+    content:"\e02c"
+}
+.icons-info:before
+{
+    content:"\e02d"
+}
+.icons-invisible:before
+{
+    content:"\e02e"
+}
+.icons-italic:before
+{
+    content:"\e02f"
+}
+.icons-link:before
+{
+    content:"\e030"
+}
+.icons-logo-m:before
+{
+    content:"\e031"
+}
+.icons-logo:before
+{
+    content:"\e032"
+}
+.icons-milestone:before
+{
+    content:"\e033"
+}
+.icons-more:before
+{
+    content:"\e034"
+}
+.icons-new-post:before
+{
+    content:"\e035"
+}
+.icons-note-plus:before
+{
+    content:"\e036"
+}
+.icons-notes:before
+{
+    content:"\e037"
+}
+.icons-ordered:before
+{
+    content:"\e038"
+}
+.icons-part-color:before
+{
+    content:"\e039"
+}
+.icons-part-image:before
+{
+    content:"\e03a"
+}
+.icons-read-next:before
+{
+    content:"\e03b"
+}
+.icons-read:before
+{
+    content:"\e03c"
+}
+.icons-reading-list:before
+{
+    content:"\e03d"
+}
+.icons-remove:before
+{
+    content:"\e03e"
+}
+.icons-replace-image:before
+{
+    content:"\e03f"
+}
+.icons-search:before
+{
+    content:"\e040"
+}
+.icons-settings:before
+{
+    content:"\e041"
+}
+.icons-share:before
+{
+    content:"\e042"
+}
+.icons-shrink:before
+{
+    content:"\e043"
+}
+.icons-solid-check:before
+{
+    content:"\e044"
+}
+.icons-stats:before
+{
+    content:"\e045"
+}
+.icons-trusted-tester:before
+{
+    content:"\e046"
+}
+.icons-twitter:before
+{
+    content:"\e047"
+}
+.icons-break:before
+{
+    content:"";
+    display:inline-block;
+    width:80%;
+    height:4px;
+    background:#fff;
+    margin-top:13px;
+    margin-bottom:10px
+}
+.error-400 .icons-error:before
+{
+    content:"\e018"
+}
+.error-401 .icons-error:before
+{
+    content:"\e019"
+}
+.error-403 .icons-error:before
+{
+    content:"\e01a"
+}
+.error-404 .icons-error:before
+{
+    content:"\e01b"
+}
+.error-410 .icons-error:before
+{
+    content:"\e01c"
+}
+.error-500 .icons-error:before
+{
+    content:"\e01d"
+}
+.error-unknown .icons-error:before
+{
+    content:"\e01e"
+}
+.highlight-menu-blockquote .icons-blockquote:after
+{
+    content:"\e00d"
+}
+.icons-profile:before
+{
+    content:"\e00c"
+}
+.icons-arrow-down:before
+{
+    content:"\e00b";
+    display:inline-block;
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+    transform:rotate(90deg)
+}
+.highlight-menu-notes .icons-notes:after
+{
+    content:"\e009"
+}
+.icons-follow:before
+{
+    content:"\e009"
+}
+.btn-follow.active .icons-follow:before
+{
+    content:"\e010"
+}
+.btn .icons-x:before
+{
+    content:"Ã—";
+    top:-6px !important
+}
+.icons-avatar:before
+{
+    color:rgba(0,0,0,0.3);
+    font-size:75px;
+    line-height:75px
+}
+.avatar-micro.icons-avatar:before
+{
+    font-size:23px;
+    line-height:18px
+}
+.typeahead .icons.icons-avatar:before
+{
+    color:rgba(0,0,0,0.3)
+}
+.typeahead .active .icons.icons-avatar:before
+{
+    color:#fff
+}
+.avatar .icons-avatar:before
+{
+    line-height:83px
+}
+.icons-avatar-user-inline,.icons-avatar-user
+{
+    width:22px;
+    height:22px;
+    display:block;
+    overflow:hidden;
+    -webkit-border-radius:100%;
+    -moz-border-radius:100%;
+    border-radius:100%
+}
+.icons-avatar-user-inline
+{
+    display:inline-block;
+    position:relative;
+    top:6px;
+    margin:-6px 3px 0 5px
+}
+.icons-avatar-user img
+{
+    width:22px;
+    height:22px;
+    display:block
+}
+.icons.post-author-image
+{
+    background:rgba(0,0,0,0.05)
+}
+.icons.post-author-image:before
+{
+    font-size:80px;
+    position:relative;
+    top:8px
+}
+@media all and (max-width:1000px)
+{
+    .icons.post-author-image:before
+    {
+        font-size:60px;
+        top:2px
+    }
+
+}
+.icons-info:before
+{
+    font-size:22px;
+    position:relative;
+    top:2px
+}
+.icons-twitter:before
+{
+    font-size:21px;
+    position:relative;
+    top:2px
+}
+.btn .icons.icons-replace-image:before,.icons-replace-image:before
+{
+    font-size:72px;
+    line-height:0;
+    top:45px;
+    position:relative
+}
+.control .icons.icons-replace-image:before,.post-page-wrapper .no-image .icons-replace-image:before,.post-page-wrapper .background-size-full .icons-replace-image:before
+{
+    top:0;
+    left:0
+}
+.btn-replace-image .icons-replace-image
+{
+    display:block;
+    position:absolute;
+    left:0;
+    top:0;
+    width:72px
+}
+.template-flex-article .icons-replace-image:before
+{
+    display:none
+}
+.template-flex-article .control .icons:before
+{
+    display:inline
+}
+.template-flex-article .no-image .icons-replace-image:before
+{
+    display:block;
+    color:rgba(0,0,0,0.15)
+}
+.template-flex-article .image .replace-image-message .icons-replace-image:before
+{
+    display:block
+}
+.icons-add-circled:before
+{
+    color:rgba(0,0,0,0.3);
+    font-size:24px;
+    position:relative;
+    top:9px
+}
+.inline-tooltip-menu-active .icons-add-circled:before,
+.inline-tooltip-control:focus .icons-add-circled:before,
+.inline-tooltip-control:hover .icons-add-circled:before
+{
+    color:#57ad68
+}
+.collection-empty .icons-add-circled::before,.contribute-messaging .icons-add-circled::before
+{
+    font-size:50px;
+    position:absolute;
+    top:100px;
+    left:50%;
+    margin-left:-24px
+}
+.collection-empty .icons-add-circled::before
+{
+    top:20px
+}
+.error-message .icons-logo:before,.icons-error:before
+{
+    width:150px;
+    height:150px;
+    display:block;
+    font-size:301px;
+    color:#fff;
+    line-height:100px
+}
+.error-signin .icons-logo:before
+{
+    color:inherit
+}
+.icons-avatar.post-item-avatar:before
+{
+    position:relative;
+    top:-12px;
+    font-size:40px;
+    left:9px
+}
+.cover-icon
+{
+    font-size:700px;
+    left:-200px;
+    position:absolute;
+    top:50%;
+    margin-top:-500px;
+    filter:alpha(opacity=5);
+    -khtml-opacity:.05;
+    -moz-opacity:.05;
+    opacity:.05
+}
+.notes-marker-icon
+{
+    position:absolute;
+    font-size:25px;
+    margin-left:1px
+}
+.icons-note-plus:before
+{
+    top:-1px;
+    position:relative;
+    font-size:22px
+}
+.post-article .btn .icons-email:before
+{
+    top:-1px
+}

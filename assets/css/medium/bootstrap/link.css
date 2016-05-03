@@ -1,0 +1,64 @@
+/*
+// Link
+// -------------------------------------------
+*/
+
+.link
+{
+    color:inherit;
+    text-decoration:none
+}
+.link:hover,.link:active,.link:focus
+{
+    color:inherit;
+    text-decoration:underline
+}
+.link-primary
+{
+    color:rgba(0,0,0,0.8);
+    text-decoration:none
+}
+.link-primary:hover,.link-primary:active,.link-primary:focus
+{
+    color:#00aaf0;
+    text-decoration:none
+}
+.link-secondary
+{
+    color:rgba(0,0,0,0.3)
+}
+.error .link,.error .link:hover,.error .link:active,.error .link:focus
+{
+    color:#fff
+}
+.link-underline
+{
+    text-decoration:underline
+}
+.link-accent
+{
+    color:#57ad68;
+    text-decoration:none
+}
+.link-accent:hover,.link-accent:active,.link-accent:focus
+{
+    color:#57ad68;
+    text-decoration:none
+}
+.link-butter
+{
+    color:#57ad68;
+    text-decoration:underline
+}
+.link-butter:hover,.link-butter:active,.link-butter:focus
+{
+    color:#468c54
+}
+.link-overlay
+{
+    color:rgba(0,0,0,0.8)
+}
+.link-overlay:hover,.link-overlay:active,.link-overlay:focus
+{
+    color:rgba(0,0,0,0.9)
+}
