@@ -1,0 +1,145 @@
+.background-white
+{
+    background:#fff
+}
+.background-gradient
+{
+    background:rgba(0,0,0,0.44);
+    position:relative
+}
+.background-gradient:before
+{
+    content:'';
+    position:absolute;
+    left:0;
+    right:0;
+    top:-20%;
+    height:20%;
+    background-image:-webkit-gradient(linear, 0 0, 0 100%, from(rgba(0,0,0,0)), to(rgba(0,0,0,0.44)));
+    background-image:-moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.44));
+    background-image:-webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.44));
+    background-image:-o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.44));
+    background-image:linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.44));
+    background-repeat:repeat-x;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#70000000', GradientType=0);
+    pointer-events:none
+}
+.align-middle:before,.align-middle .align-block
+{
+    display:inline-block;
+    vertical-align:middle
+}
+.align-bottom:before,.align-middle:before
+{
+    content:'';
+    height:100%
+}
+.align-bottom:before,.align-bottom .align-block
+{
+    display:inline-block;
+    vertical-align:bottom
+}
+.align-left
+{
+    float:left
+}
+.align-right
+{
+    float:right
+}
+.align-center
+{
+    text-align:center
+}
+.align-middle-table
+{
+    display:table
+}
+.align-middle-table:before
+{
+    height:auto;
+    display:inherit
+}
+.align-middle-table .align-block
+{
+    display:table-cell;
+    vertical-align:middle
+}
+.canvas-renderer
+{
+    display:block;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#fff;
+    -webkit-transform:translateZ(0);
+    -moz-transform:translateZ(0);
+    -ms-transform:translateZ(0);
+    -o-transform:translateZ(0);
+    transform:translateZ(0)
+}
+@media not print
+{
+    .screen-content
+    {
+        height:100%
+    }
+
+}
+@-ms-viewport
+{
+    width:device-width;
+}
+@media print
+{
+    .layout-single-column,.post-article .layout-single-column,.logged-out-post-footer .layout-single-column
+    {
+        width:80%;
+        margin:0 auto
+    }
+    .canvas-renderer
+    {
+        display:none
+    }
+
+}
+
+/*   Scroll bar style   */
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+     background: #2f2f2f;
+     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+ }
+::-webkit-scrollbar-thumb:hover {
+    background: black;
+}
+
+.enable-night-mode ::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.enable-night-mode ::-webkit-scrollbar-thumb {
+    background: #d8d8d8;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.26);
+}
+.enable-night-mode ::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}
+@media screen and (max-width:630px)
+{
+    ::-webkit-scrollbar {
+        width: 4px;
+    }
+}

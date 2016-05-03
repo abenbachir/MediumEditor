@@ -1,0 +1,253 @@
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" user-scalable="no">
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico" />
+    <title>Medium Editor</title>
+
+    <!-- Style -->
+    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="/assets/css/design.css">
+    <!--<link type="text/css" rel="stylesheet" href="/assets/css/design-full.css">-->
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'XXXX', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+</head>
+<body class="is-post-edit-mode ">
+
+    <nav id="navbar" class="navbar navbar-absolute-top navbar-clear" >
+        <div class="navbar-inner">
+            <a class="brand" href="javascript:;"  >
+                <span class="nav-brand-text" ><b>Abder</b></span>
+            </a>
+            <ul class="nav pull-right">
+                <li class="btn-navbar-actions">
+                    <button id="enable-night-mode" class="btn" title="Night mode"><i class="fa fa-adjust"></i></button>
+                    <button id="enable-paragraph-focus" class="btn" title="Enable paragraph focus"><i class="fa fa-paragraph"></i></button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <article class="post-article">
+        <div class="story-cover" >
+            <div class="story-cover-image" >
+                <div class="story-cover-filter" ></div>
+            </div>
+
+            <div class="story-cover-content">
+                <div class="post-content layout-single-column">
+                    <button id="btn-replace-cover" class="btn btn-chromeless btn-replace-image">
+                        <span class="fa fa-photo fa-4x"></span>
+                    </button>
+                    <header class="post-header">
+                        <h1 name="title" class="post-title" data-placeholder="Title" data-disable-toolbar="true" data-disable-double-return="true" data-disable-return="true">Why ContentEditable is Terrible</h1>
+                        <h2 name="description" class="post-field subtitle" data-placeholder="Description" data-disable-toolbar="true" data-disable-double-return="true" data-disable-return="true" >Or: How the Medium Editor Works</h2>
+                    </header>
+                </div>
+            </div>
+            <button class="btn-remove remove-header-image btn-chromeless fa fa-plus fa-rotate-45" data-tooltip="Remove the cover photo."></button>
+        </div>
+
+        <div class="body post-content">
+            <div class="layout-single-column">
+                <div class="contenteditable" data-placeholder="Express yourself" data-allow-embed-video="true">
+                    <p><b>The first</b> time I sat across a table from Jacob (<a target="_blank" href="https://twitter.com/@fat" >@fat</a>), he asked bluntly, “How do you write a text editor?”</p>
+
+                    <figure tabindex="0" contenteditable="false" class="">
+                        <div class="aspect-ratio-placeholder aspect-ratio-fill post-media">
+                            <img src="https://d262ilb51hltx0.cloudfront.net/max/800/1*C9yIVU8HZv_YDhaWLE7J4g.jpeg">
+                        </div>
+                        <figcaption class="image-caption" contenteditable="true" data-placeholder="Type caption for image (optional)"
+                                    data-disable-double-return="true" data-disable-return="true">
+                        </figcaption>
+                    </figure>
+
+                    <figure tabindex="0" contenteditable="false" class="">
+                        <div class="iframe-container post-media">
+                            <iframe width="640" height="480" frameborder="0" src="//www.youtube.com/embed/MeDb2nU9jKU"> </iframe>
+                        </div>
+                        <figcaption class="image-caption" data-placeholder="Type caption for embed (option)" data-disable-double-return="true" data-disable-return="true">
+                        </figcaption>
+                    </figure>
+
+                    <blockquote><a></a>I drew a tree structure on the whiteboard, waved my hands, and said “This is a shitty editing surface.” Then I drew a column of boxes with arrows pointing to arrays, waved my hands some more, and said “This is a good editing surface.”</blockquote>
+                    <p><a></a>Jacob raised an eyebrow.</p>
+                    <p><a></a>This post is what I would have said instead, if I had a year to think about it.</p>
+                    <h3><a></a><strong>Why ContentEditable Is Terrible: A Mathematical Proof</strong></h3>
+                    <p><a></a><a target="_blank" href="https://dvcs.w3.org/hg/editing/raw-file/tip/editing.html" >ContentEditable</a> is the native widget for editing rich text in a web browser. It is…sad.</p>
+                    <p><a></a>I’m going to try to prove to you, with some hand-wavey math, that the current approach of ContentEditable is broken. This is not because I think math is a persuasive way to make this argument. It actually makes the argument more alienating.</p>
+                    <p><a></a>But I do think that text editors lead to lots of fuzzy, ill-defined questions like “What does What-You-See-Is-What-You-Get (WYSIWYG) even mean?” and “What happens when you select this text and hit Enter?” Axiomatic math is the best toolkit I know to take fuzzy, ill-defined questions and sharpen them.</p>
+
+                </div>
+            </div>
+
+            <div class="inline-tooltip2">
+                <button class="btn inline-tooltip2-btn inline-tooltip2-btn-control" title="Open menu">
+                    <span class="fa fa-plus"></span>
+                </button>
+
+                <div class="inline-tooltip2-menu">
+                    <button class="btn inline-tooltip2-btn inline-tooltip2-btn-menu inline-tooltip2-btn-insert-image" title="Add an image">
+                        <span class="fa fa-picture-o"></span>
+                    </button>
+                    <button class="btn inline-tooltip2-btn inline-tooltip2-btn-menu inline-tooltip2-btn-insert-video" data-action-value="Paste a YouTube, Vine, Vimeo, or another video link, and press Enter" title="Add a video">
+                        <span class="fa fa-play"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="inline-media-tooltip">
+                <div class="inline-media-tooltip-menu">
+                    <button class="btn inline-media-tooltip-btn inline-media-tooltip-btn-menu inline-media-tooltip-btn-remove-image" title="Remove image">
+                        <span class="fa fa-plus fa-rotate-45"></span>
+                    </button>
+                    <button class="btn inline-media-tooltip-btn inline-media-tooltip-btn-menu inline-media-tooltip-btn-dedent" title="Set dedent">
+                        <span class="fa fa-dedent"></span>
+                    </button>
+                    <button class="btn inline-media-tooltip-btn inline-media-tooltip-btn-menu inline-media-tooltip-btn-crop" title="Crop image">
+                        <span class="fa fa-crop"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </article>
+    <br/>
+
+    <script type="text/javascript" src="/assets/js/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery/jquery.touchSwipe.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery/jquery.ba-outside-events.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery/jquery.ytchromeless.js"></script>
+    <script type="text/javascript" src="/assets/js/vendor/swfobject.min.js"></script>
+    <script type="text/javascript" src="/assets/js/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/assets/js/site-nav.js"></script>
+
+    <script type="text/javascript" src="/assets/js/medium/medium-editor.js"></script>
+    <script type="text/javascript" src="/assets/js/medium/medium-editor-inline-tooltip.js"></script>
+        
+    <script>
+        $("#enable-night-mode").click(function(){
+            $(this).toggleClass('active');
+            $('body').toggleClass('enable-night-mode');
+        });
+    </script>
+
+    <script type="text/javascript">
+        //$(document).ready(function(){
+        var titleEditor = new MediumEditor('header h1,header h2,.post-field-caption', {
+            disableToolbar:true,
+            disableDoubleReturn:true,
+            disableReturn:true
+        });
+
+        var captionEditor = new MediumEditor('figure figcaption', {
+            buttonLabels: 'fontawesome',
+            buttons : ['bold', 'anchor']
+        });
+
+        var contentEditor = new MediumEditor('.contenteditable', {
+            buttonLabels: 'fontawesome',
+            allowMultiParagraphSelection: false,
+        });
+
+        /* enable-paragraph-focus */
+        $("#enable-paragraph-focus").click(function(){
+            $(this).toggleClass('active');
+            $('body').toggleClass('enable-paragraph-focus');
+        });
+
+
+        /*  Cover manipulation */
+        $("#btn-replace-cover").click(function(){
+            var $selectFile = $('<input type="file">').click();
+            $selectFile.change(function () {
+                var file = this.files[0];
+                // Only process image files.
+                if (!file.type.match('image.*'))
+                    return;
+
+                previewSelectedImage(file, $(".story-cover-image"));
+                $("body").addClass("has-cover");
+                $('.navbar').addClass('navbar-light');
+            });
+        });
+
+        $(".remove-header-image").click(function(){
+            $(".story-cover-image").removeAttr('style');
+            $('body').removeClass('has-cover');
+            $('.navbar').removeClass('navbar-light');
+        });
+
+        $("#ted-filter").click(function(){
+            $(".story-cover").toggleClass('ted-filter');
+        })
+
+
+        function previewSelectedImage(file, $img)
+        {
+            var reader = new FileReader();
+            // Closure to capture the file information.
+            reader.onload = (function(theFile) {
+                return function(e) {
+                    // Render.
+                    $img.css('background-image', 'url(' + e.target.result + ')');
+                };
+            })(file);
+            // Read in the image file as a data URL.
+            reader.readAsDataURL(file);
+        }
+
+
+        $('#contenteditable').on('dragenter', function() {
+            $(this).addClass('drop-zone');
+            return false;
+        }).on('dragover', function(e){
+            e.preventDefault();
+            e.stopPropagation();
+            return false;
+        }).on('dragleave', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            $(this).removeClass('drop-zone');
+            return false;
+        });
+
+
+
+        //})
+    </script>
+
+    <script>
+        $(document).ready(function(){
+
+            $('#navbar').affix({
+                offset: {
+                    top: $('article .post-title').position().top
+                }
+            });
+//            .on('affix-top.bs.affix', function(){
+//                $(this).removeClass('navbar-affixed');
+//                //$(this).removeAttr('style');
+//            }).on('affixed.bs.affix', function(){
+//                //$(this).animate({top:0},600);
+//                $(this).addClass('navbar-affixed');
+//            });
+        })
+
+    </script>
+
+</body>
+
+</html>

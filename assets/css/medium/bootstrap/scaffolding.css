@@ -1,0 +1,78 @@
+body
+{
+    font-family:"jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+    letter-spacing:-0.02em;
+    font-weight:400;
+    font-style:normal;
+    color:rgba(0,0,0,0.8);
+    font-size:18px;
+    line-height:1.4;
+    text-rendering:optimizeLegibility;
+    -webkit-font-smoothing:antialiased
+}
+body,body:before
+{
+    background-color: transparent;
+    /* make trans for night mode activation */
+    -webkit-transition: color 0.5s ease, background 0.5s ease;
+    -moz-transition: color 0.5s ease, background 0.5s ease;
+    -ms-transition: color 0.5s ease, background 0.5s ease;
+    -o-transition: color 0.5s ease, background 0.5s ease;
+    transition: color 0.5s ease, background 0.5s ease;
+    content: '';
+}
+h1,h2,h3,h4
+{
+    font-family:"jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+    letter-spacing:-0.02em;
+    font-weight:700;
+    font-style:normal
+}
+p
+{
+    margin-bottom:30px
+}
+a
+{
+    color:inherit;
+    text-decoration:none
+}
+@media screen and (max-device-width:1000px)
+{
+    html
+    {
+        -webkit-text-size-adjust:none
+    }
+
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    src: local('Roboto Thin'), local('Roboto-Thin'), url(http://themes.googleusercontent.com/static/fonts/roboto/v11/vzIUHo9z-oJ4WgkpPOtg13YhjbSpvc47ee6xR_80Hnw.woff) format('woff');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Roboto Light'), local('Roboto-Light'), url(http://themes.googleusercontent.com/static/fonts/roboto/v11/Hgo13k-tfSpn0qi1SFdUfbO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto Regular'), local('Roboto-Regular'), url(http://themes.googleusercontent.com/static/fonts/roboto/v11/CrYjSnGjrRCn0pd9VQsnFOvvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Roboto Medium'), local('Roboto-Medium'), url(http://themes.googleusercontent.com/static/fonts/roboto/v11/RxZJdnzeo3R5zSexge8UUbO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Roboto Bold'), local('Roboto-Bold'), url(http://themes.googleusercontent.com/static/fonts/roboto/v11/d-6IYplOFocCacKzxwXSOLO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}

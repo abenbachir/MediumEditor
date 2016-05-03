@@ -1,0 +1,230 @@
+.hero
+{
+    text-align:center;
+    height:500px
+}
+.hero-title
+{
+    font-family:"jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+    letter-spacing:-0.02em;
+    font-weight:700;
+    font-style:normal;
+    font-size:30px;
+    letter-spacing:-0.04em;
+    line-height:1;
+    color:rgba(0,0,0,0.8);
+    margin-bottom:8px;
+    outline:0;
+    word-break:break-word;
+}
+.hero-description
+{
+    color:rgba(0,0,0,0.6);
+    font-size:18px;
+    outline:0;
+    word-break:break-word;
+    letter-spacing:-0.02em;
+}
+.hero-description>a
+{
+    color:rgba(0,0,0,0.8)
+}
+.hero-description>a:hover,.hero-description>a:focus,.hero-description>a:active
+{
+    text-decoration:underline
+}
+.hero-home
+{
+    height:380px
+}
+.hero-home .align-block
+{
+    margin-top:50px
+}
+.hero-home .hero-title,.hero-home .hero-description
+{
+    color:#fff
+}
+.hero-home .hero-title
+{
+    margin-bottom:0
+}
+.hero-home .hero-description
+{
+    font-family:"freight-text-pro",Georgia,Cambria,"Times New Roman",Times,serif;
+    letter-spacing:0.01rem;
+    font-weight:400;
+    font-style:normal;
+    font-size:22px;
+    margin:0 0 10px 0;
+    padding:0
+}
+.hero-home+.nav-tabs
+{
+    padding-bottom:0
+}
+.hero-collection
+{
+    height:80%
+}
+.hero-collection .hero-title
+{
+    margin-top:4%;
+    color:#fff
+}
+.hero-collection .hero-description
+{
+    color:rgba(255,255,255,0.85)
+}
+.hero-collection-tags
+{
+    margin-top:25px
+}
+.hero-collection-settings .cover-picker-controls
+{
+    margin-top:-100px
+}
+.hero-collection-settings .icons-replace-image:before
+{
+    color:rgba(255,255,255,0.5)
+}
+.hero-collection-settings .icons-replace-image:focus:before,.hero-collection-settings .icons-replace-image:active:before,.hero-collection-settings .icons-replace-image:hover:before
+{
+    color:#fff
+}
+.hero-collection-settings .hero-actions
+{
+    margin-bottom:-46px
+}
+.hero-collection-settings .btn
+{
+    width:74px
+}
+.hero-profile,.editing .cover-picker.no-image+.layout-fill-height .hero-profile
+{
+    height:auto;
+    margin-top:100px;
+    margin-bottom:50px
+}
+.cover-picker.no-image+.layout-fill-height .hero-profile
+{
+    margin-top:160px
+}
+.hero-avatar
+{
+    margin-top:-60px;
+    margin-bottom:20px;
+    display:inline-block;
+    width:110px;
+    height:110px;
+    overflow:hidden;
+    border:3px solid #fff;
+    z-index:500;
+    background-color:#fff;
+    -webkit-border-radius:100%;
+    -moz-border-radius:100%;
+    border-radius:100%;
+    -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.3);
+    -moz-box-shadow:0 1px 1px rgba(0,0,0,0.3);
+    box-shadow:0 1px 1px rgba(0,0,0,0.3)
+}
+.hero-avatar-image
+{
+    display:block;
+    width:100%;
+    height:100%;
+    -webkit-border-radius:100%;
+    -moz-border-radius:100%;
+    border-radius:100%
+}
+.hero-standalone
+{
+    padding:100px 0 40px;
+    height:auto
+}
+.hero-standalone-underline:after
+{
+    content:'';
+    background:rgba(0,0,0,0.15);
+    height:1px;
+    width:100px;
+    display:block;
+    margin:30px auto 0
+}
+.hero-fullscreen
+{
+    height:85%
+}
+@media screen and (max-width:500px)
+{
+    .hero-title
+    {
+        font-size:32px;
+        margin-bottom:4px
+    }
+    .hero-description
+    {
+        font-size:16px
+    }
+    .hero-home
+    {
+        height:250px
+    }
+    .hero-home .hero-description
+    {
+        font-size:18px;
+        margin-bottom:24px
+    }
+    .hero-profile,.editing .cover-picker.no-image+.layout-foreground .hero-profile
+    {
+        margin-top:200px;
+        margin-bottom:40px
+    }
+    .cover-picker.no-image+.layout-foreground .hero-profile
+    {
+        margin-top:80px
+    }
+    .hero-avatar
+    {
+        width:100px;
+        height:100px;
+        margin-top:-50px;
+        margin-bottom:16px;
+        -webkit-border-radius:100%;
+        -moz-border-radius:100%;
+        border-radius:100%
+    }
+    .follow-count
+    {
+        max-width:250px
+    }
+    .follow-count-value
+    {
+        font-size:32px
+    }
+    .hero-standalone
+    {
+        padding:0;
+        margin-bottom:10px;
+        margin-top:50px;
+    }
+    .hero-standalone .hero-title
+    {
+        font-size:18px;
+        height:44px;
+        line-height:46px;
+        margin:0 -6px 20px;
+        padding:10px 0 10px 10px;
+        text-align:left;
+        border-bottom:1px solid rgba(0,0,0,0.15)
+    }
+    .hero-standalone:after
+    {
+        display:none
+    }
+    .hero-standalone .input-text
+    {
+        width:100%
+    }
+
+}
