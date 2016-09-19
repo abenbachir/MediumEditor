@@ -36,7 +36,7 @@ How it works :
 3. Parse essence metadata and build HTML/json/xml 
 4. Return the informations (background-image, caption, width, height, or HTML )
 
-I will add more tutorials te explain in more details how to use different frameworks as symfony, laravel or django to implement the backend side.
+I will add more tutorials to explain in more details how to use some frameworks as symfony, laravel or django to implement the backend side.
 
 # Contribution
 You are welcome to contribute on this project :).
